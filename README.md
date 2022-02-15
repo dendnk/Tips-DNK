@@ -3,11 +3,11 @@
 # Unreal Engine
 
 ## To watch bytecode you need to add to Engine prints.ini or DefaultEngine.ini
-> [Kismet]
+> [Kismet] \n
   CompileDisplaysBinaryBackend=true
 
 To watch C++ code 
-> [Kismet]
+> [Kismet] \n
   CompileDisplaysTextBackend=true
 
 But unreal can go down after that) UE5 crashed without patch
