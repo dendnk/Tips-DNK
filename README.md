@@ -2,13 +2,13 @@
 
 # Unreal Engine
 
-
 To watch bytecode you need to add to Engine prints.ini or DefaultEngine.ini
-[Kismet]
-CompileDisplaysBinaryBackend=true
-А чтобы смотреть С++ код надо добавить
-[Kismet]
-CompileDisplaysTextBackend=true
+> [Kismet]
+> CompileDisplaysBinaryBackend=true
+
+To watch C++ code 
+> [Kismet]
+> CompileDisplaysTextBackend=true
 
 But unreal can go down after that) UE5 crashed without patch
 And there are no much text prints in log, it needs to check in debugger what it want to print
@@ -21,4 +21,4 @@ There were no any conversions, it needs to change GUID values in register:
 
 # Plastic SCM
 
- - To fix line endings in plastic SCM you need to add the <AutoEolConversion>Auto</AutoEolConversion> in client.conf file.
+ - To fix line endings in plastic SCM you need to add the \<AutoEolConversion\>Auto\</AutoEolConversion\> in client.conf file.
