@@ -2,6 +2,12 @@
 
 # Unreal Engine
 
+### To generate ProjectName.xcworkspace file on Mac you need run command
+```
+/UnrealEngine/Engine/Build/BatchFiles/Mac/GenerateProjectFiles.sh -project=/ProjectName/ProjectName.uproject -Game
+
+```
+
 ### To watch bytecode you need to add to Engine prints.ini or DefaultEngine.ini
 ```
 [Kismet]
