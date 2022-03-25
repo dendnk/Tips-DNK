@@ -54,3 +54,21 @@ And there are no much text prints in log, it needs to check in debugger what it 
 # Plastic SCM
 
  - To fix line endings in plastic SCM you need to add the \<AutoEolConversion\>Auto\</AutoEolConversion\> in client.conf file.
+
+# Windows Power Shell
+
+### Renaming via special commands
+
+Add prefix "A_" :
+``` dir | Rename-Item -NewName {"A_" + $_.Name} ```
+
+Replace space on underscore : 
+``` dir | Rename-Item –NewName { $_.Name –replace “ “,”_” } ```
+
+Replace letters to Upper case : 
+``` dir | Rename-Item -NewName {(Get-Culture).TextInfo.ToTitleCase($_.Name)} ```
+
+Rename all files in subfolders on TitleCase : 
+``` Get-ChildItem -Recurse | Rename-Item -NewName {(Get-Culture).TextInfo.ToTitleCase($_.Name)} ```
+
+
