@@ -2,10 +2,24 @@
 
 # Unreal Engine
 
+### For updating Details panel in Editor check
+```
+GUnrealEd->UpdateFloatingPropertyWindows(true); 
+```
+
+### Editor flow after clicking on component
+```
+FEditorViewportClient::ProcessClickInViewport -> FEditorViewportClient::ProcessClick(View,HitProxy,Key,Event,HitX,HitY) ->
+-> FComponentVisualizerManager::HandleClick(FEditorViewportClient* InViewportClient, HHitProxy* HitProxy, const FViewportClick& Click) ->
+-> FComponentVisualizerManager::HandleProxyForComponentVis(InViewportClient, HitProxy, Click);
+=========================================
+GUnrealEd->FindComponentVisualizer(ClickedComponent->GetClass());
+bool bIsActive = Visualizer->VisProxyHandleClick(InViewportClient, VisProxy, Click);
+```
+
 ### To generate ProjectName.xcworkspace file on Mac you need run command
 ```
 /UnrealEngine/Engine/Build/BatchFiles/Mac/GenerateProjectFiles.sh -project=/ProjectName/ProjectName.uproject -Game
-
 ```
 
 ### To watch bytecode you need to add to Engine prints.ini or DefaultEngine.ini
