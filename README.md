@@ -17,6 +17,14 @@ GUnrealEd->FindComponentVisualizer(ClickedComponent->GetClass());
 bool bIsActive = Visualizer->VisProxyHandleClick(InViewportClient, VisProxy, Click);
 ```
 
+### Some useful tips for increasing FPS while in editor:
+
+1. Enable Game mode (toggling by key "G")
+2. Hide unnecessary objects (for instance: Landscapes (or setup them with proper parameters)
+3. Change View mode (for example from Lit to Unlit)
+4. You can check fps by command [stat fps] (input this command again to hide stats)
+5. Also you can check number of draw calls and polygons by command [stat rhi]
+
 ### To generate ProjectName.xcworkspace file on Mac you need run command
 ```
 /UnrealEngine/Engine/Build/BatchFiles/Mac/GenerateProjectFiles.sh -project=/ProjectName/ProjectName.uproject -Game
