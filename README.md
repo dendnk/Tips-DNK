@@ -72,3 +72,9 @@ Rename all files in subfolders on TitleCase :
 ``` Get-ChildItem -Recurse | Rename-Item -NewName {(Get-Culture).TextInfo.ToTitleCase($_.Name)} ```
 
 
+
+# Refactoring 
+
+``` https://refactoring.guru/ru ```
+
+
