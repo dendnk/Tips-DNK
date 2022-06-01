@@ -2,6 +2,11 @@
 
 # Unreal Engine
 
+### Movement parameters
+```
+p.VisualizeMovement 1/0 - show movement parameters and draw acceleration/velocity vectors
+```
+
 ### For updating Details panel in Editor check
 ```
 GUnrealEd->UpdateFloatingPropertyWindows(true); 
