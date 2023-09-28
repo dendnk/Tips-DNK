@@ -65,16 +65,24 @@ And there are no much text prints in log, it needs to check in debugger what it 
 ### Renaming via special commands
 
 Add prefix "A_" :
-``` dir | Rename-Item -NewName {"A_" + $_.Name} ```
+```
+dir | Rename-Item -NewName {"A_" + $_.Name} 
+```
 
 Replace space on underscore : 
-``` dir | Rename-Item –NewName { $_.Name –replace “ “,”_” } ```
+```
+dir | Rename-Item –NewName { $_.Name –replace “ “,”_” }
+```
 
 Replace letters to Upper case : 
-``` dir | Rename-Item -NewName {(Get-Culture).TextInfo.ToTitleCase($_.Name)} ```
+```
+dir | Rename-Item -NewName {(Get-Culture).TextInfo.ToTitleCase($_.Name)} 
+```
 
 Rename all files in subfolders on TitleCase : 
-``` Get-ChildItem -Recurse | Rename-Item -NewName {(Get-Culture).TextInfo.ToTitleCase($_.Name)} ```
+```
+Get-ChildItem -Recurse | Rename-Item -NewName {(Get-Culture).TextInfo.ToTitleCase($_.Name)}
+```
 
 
 
