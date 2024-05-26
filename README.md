@@ -1,5 +1,16 @@
 # Tips-DNK
 
+# C++
+### Literature
+
+1. ISO/IEC 14882:2020 - Programming languages — C++, 2020
+2. Bjarne Stroustrup: The C++ Programming Language (4th Edition), 2013
+3. ISO/IEC 9899:2018 Information technology — Programming languages — C, 2018
+4. Brian W. Kernighan and Dennis M. Ritchie The C programming Language, 1988
+5. Stanley Lippman, Josée Lajoie, Barbara Moo C++ Primer (5th Edition) 5th Edition, 2012
+6. Paul Deitel, Harvey Deitel C++ How to Program 10th Edition, 2016
+
+
 # Unreal Engine
 
 ### Movement parameters
