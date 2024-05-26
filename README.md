@@ -9,6 +9,7 @@
 4. Brian W. Kernighan and Dennis M. Ritchie The C programming Language, 1988
 5. Stanley Lippman, Josée Lajoie, Barbara Moo C++ Primer (5th Edition) 5th Edition, 2012
 6. Paul Deitel, Harvey Deitel C++ How to Program 10th Edition, 2016
+7. Konstantin Vladimirov C++ lectures in russian : https://sourceforge.net/projects/cpp-lects-rus/
 
 
 # Unreal Engine
